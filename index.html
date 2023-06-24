@@ -5,6 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="css/style.css" rel="stylesheet">
+        <link rel="stylesheet" media="screen and (max-width: 741px)" href="css/phone.css">
         <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
     </head>
     <body>
@@ -13,18 +14,68 @@
                 <img src="img/logo.png" alt="SuprimKoirala">
             </div>
             <ul>
-                <li class="item"><a href="#">Home</a></li>
-                 <li class="item"><a href="#">Services</a></li>
-                 <li class="item"><a href="#">About</a></li>
-                 <li class="item"><a href="#">CV</a></li>
-                 <li class="item"><a href="#">Contact</a></li>
+                <li class="item"><a href="#home">Home</a></li>
+                 <li class="item"><a href="#services">Services</a></li>
+                 <li class="item"><a href="#aboutcv">About</a></li>
+                 <li class="item"><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <section id="main">
+        <section id="home">
+        <div id="main">
+            <div class="text">
             <h1 class="primary">
-                Hello! My Name Is Suprim Koirala
+               <span>Hello</span>
+        </h1><h1> I'm <span>Suprim Koirala</span> 
             </h1>
-            <p>I am a Tech Enthusiast</p>
+            <p>Tech Enthusiast</p>
+                </div>
+            <div class="photo">
+                <img src="img/280033531_3108976259377611_2539081370306275095_n.jpg" alt="">
+            </div>
+        </div>
         </section>
+        <section id="services">
+           <div> <h1 class="center">Services</h1></div>
+            <div id="unavail">
+                <img src="img/360_F_315942126_eVHcsAL0e2z9OW3yNLBJ8JpeQorDFlQj.jpg" alt="">
+            </div>
+        </section>
+                <section id="aboutcv">
+            <div id="about">
+                <div> <h1>ABOUT ME</h1>
+                <h2>Suprim Koirala</h2></div>
+                <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero beatae obcaecati, ducimus sunt architecto ad sit, ratione eum nihil nobis vitae porro qui itaque ipsum tenetur eaque reiciendis. Eaque omnis nostrum ullam!</p>
+                    </div>
+            </div>
+            <div id="cv">
+                <h1>Download my CV</h1>
+               <button type="submit">Download My Cv</button> 
+            </div>
+            
+        </section>
+
+        <section id="contact">
+        <h1 class="h-primary center">Contact Me</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email: </label>
+                    <input type="email" name="name" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number: </label>
+                    <input type="phone" name="name" id="phone" placeholder="Enter your phone">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message: </label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+            </form>
+        </div>
+    </section>
     </body>
 </html>
