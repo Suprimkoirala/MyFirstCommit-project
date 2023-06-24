@@ -1,0 +1,136 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Rubik:wght@300&display=swap');
+:root{
+  --bg : #24283b;
+    --bg_dark : #1e2030;
+  --bg_highlight : #292e42;
+  --terminal_black : #414868;
+ --fg : #c0caf5;
+  --fg_dark : #a9b1d6;
+  --fg_gutter : #3b4261;
+  --dark3 : #545c7e;
+  --comment : #565f89;
+  --dark5 : #737aa2;
+  --blue0 : #3d59a1;
+  --blue : #7aa2f7;
+  --cyan : #7dcfff;
+  --blue : #2ac3de;
+  --blue6 : #b4f9f8;
+  --magenta : #bb9af7;
+  --magenta2 : #ff007c;
+  --purple : #9d7cd8;
+  --yellow : #e0af68;
+  --green : #9ece6a;
+  --red : #f7768e;
+  --navbar-height : 59px
+}
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: var(--blue0);
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+/* Navigation Bar: Logo and Image */
+#logo{
+    margin: 10px 34px;
+}
+
+#logo img{
+    height: 59px;
+    margin: 3px 6px;
+}
+
+
+/* Navigation Bar: List Styling */
+
+#navbar ul{
+    display: flex;
+    font-family: 'Rubik', cursive;
+}
+
+#navbar ul li{ 
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: var(--bg_dark);
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: var(--fg);
+}
+#main{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    
+}
+#main::before{
+        content: "";
+    background: url('../img/background1.jpg') no-repeat center center/cover;
+    position: absolute;
+    top:0px;
+    left:0px;
+    height: 100%;
+    width:100%;
+    z-index: -1;
+    filter: blur(8px);
+  -webkit-filter: blur(8px);
+    opacity: 0.7;
+    /* filter: opacity(40); */
+
+}
+#main h1{
+    color: whitesmoke;
+    text-align: center;
+}
+
+#main p{
+    color: whitesmoke;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Fira sans';
+}
+
+
+.primary{
+    font-size: 1.8rem;
+    padding: 12px;
+}
